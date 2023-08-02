@@ -161,6 +161,7 @@ alias 000='chmod -R 000'
 alias 644='chmod -R 644'
 alias 666='chmod -R 666'
 alias 755='chmod -R 755'
+alias 775='chmod -R 775'
 alias 777='chmod -R 777'
 
 # Search command line history

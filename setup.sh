@@ -100,7 +100,7 @@ linkConfig() {
     echo -e "${YELLOW}Linking new bash config file...${RC}"
     ## Make symbolic link.
     ln -svf ${GITPATH}/.bashrc ${HOME}/.bashrc
-    ln -svf ${GITPATH}/starship.toml ${HOME}/.config/starship.toml
+    # ln -svf ${GITPATH}/starship.toml ${HOME}/.config/starship.toml
 }
 
 checkEnv

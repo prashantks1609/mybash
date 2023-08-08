@@ -626,4 +626,25 @@ eval "$(starship init bash)"
 # 	echo "can't found the autojump script"
 # fi
 
+# set up poetry
+# curl -sSL https://install.python-poetry.org | POETRY_HOME=~/.poetry python3 -
+
 export PATH=$PATH:"$HOME/.poetry/bin"
+
+# set-up JAVA_HOME
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+export SPARK_HOME="/home/ubuntu-2204/spark_3.4.0"
+export ANSIBLE_HOME="/home/ubuntu-2204/.local/bin"
+export PATH="$SPARK_HOME/bin:$PATH"
+export PATH="$ANSIBLE_HOME:$PATH"
+
+complete -C /usr/bin/terraform terraform
+
+# Set-up postgresql bin path
+LD_LIBRARY_PATH=/usr/lib/postgresql/15/lib
+export LD_LIBRARY_PATH
+POSTGRESQL_BIN="/usr/lib/postgresql/15/bin/"
+export PATH="$POSTGRESQL_BIN:$PATH"

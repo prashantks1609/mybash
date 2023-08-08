@@ -158,6 +158,7 @@ alias ldir="ls -l | egrep '^d'" # directories only
 # alias chmod commands
 alias mx='chmod a+x'
 alias 000='chmod -R 000'
+alias 600='chmod -R 600'
 alias 644='chmod -R 644'
 alias 666='chmod -R 666'
 alias 755='chmod -R 755'
@@ -617,11 +618,12 @@ eval "$(starship init bash)"
 
 #Autojump
 
-if [ -f "/usr/share/autojump/autojump.sh" ]; then
-	. /usr/share/autojump/autojump.sh
-elif [ -f "/usr/share/autojump/autojump.bash" ]; then
-	. /usr/share/autojump/autojump.bash
-else
-	echo "can't found the autojump script"
-fi
+# if [ -f "/usr/share/autojump/autojump.sh" ]; then
+# 	. /usr/share/autojump/autojump.sh
+# elif [ -f "/usr/share/autojump/autojump.bash" ]; then
+# 	. /usr/share/autojump/autojump.bash
+# else
+# 	echo "can't found the autojump script"
+# fi
 
+export PATH=$PATH:"$HOME/.poetry/bin"
